@@ -1,3 +1,17 @@
+html {
+    height: 100%;
+}
+
 body {
     background: #FDFDFD;
+    color: #222;
+    height: 100%;
+    width: 100%;
+}
+
+input {
+    border #8D8D8D solid 1px;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: inset 1px 1px 2px #999;
+    font-family: "Helvetica Neue", "Segoe UI", Arial, sans-serif;
 }

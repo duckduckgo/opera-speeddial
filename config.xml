@@ -6,5 +6,6 @@
     <author href="http://duckduckgo.com">DuckDuckGo</author>
     <icon src="images/icon_64.png"/>
     <feature name="opera:speeddial" required="true">
+        <param name="url" value="http://duckduckgo.com" />
     </feature>
 </widget>
