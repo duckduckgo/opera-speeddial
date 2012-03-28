@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <widget xmlns="http://www.w3.org/ns/widgets" id="http://duckduckgo.com" defaultlocale="en" viewmodes="minimized">
-    <name short="DuckDuckGo">DuckDuckGo Speed Dial Extension</name>
+    <name short="DuckDuckGo">DuckDuckGo</name>
     <description>Gives a handy search box in the Speed Dial window for DuckDuckGo.</description>
     <author href="http://duckduckgo.com">DuckDuckGo</author>
     <icon src="images/icon_64.png"/>
     <feature name="opera:speeddial" required="true">
-        <param name="url" value="http://duckduckgo.com"/>
     </feature>
 </widget>
