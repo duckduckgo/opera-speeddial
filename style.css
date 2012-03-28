@@ -10,8 +10,15 @@ body {
 }
 
 input {
-    border #8D8D8D solid 1px;
+    margin 10px auto 0 auto;
+    width: 80%;
+    border: #8D8D8D solid 1px;
     border-radius: 3px 3px 3px 3px;
     box-shadow: inset 1px 1px 2px #999;
     font-family: "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+}
+
+img {
+    width: 80%;
+    margin 0 auto;
 }
