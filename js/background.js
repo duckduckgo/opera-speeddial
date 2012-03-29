@@ -1,10 +1,5 @@
 windows.addEventListener('load', function() {
 
-    var title = getQuery();
-    writeQuery(title);
-    updateLink(title);
-
-
     // Get a random topic from Wikipedia
 
     function getQuery() {
