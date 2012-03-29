@@ -5,7 +5,7 @@ windows.addEventListener('load', function() {
     updateLink(title);
 
 
-    // Get a trending query
+    // Get a random topic from Wikipedia
 
     function getQuery() {
         
@@ -45,4 +45,9 @@ windows.addEventListener('load', function() {
         return 1;
 
     }
+    
+    var title = getQuery();
+    writeQuery(title);
+    updateLink(title);
+
 }, false);
