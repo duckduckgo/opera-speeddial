@@ -4,7 +4,7 @@ windows.addEventListener('load', function() {
 
     function getQuery() {
         
-        $.getJSON("http://en.wikipedia.org/w/api.php?",
+        $.getJSON("http://en.wikipedia.org/w/api.php?"
             {
                 action: "query",
                 list: "random",
