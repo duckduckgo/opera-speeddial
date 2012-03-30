@@ -1,4 +1,4 @@
-windows.addEventListener('load', function() {
+window.addEventListener('load', function() {
 
     // Get a random topic from Wikipedia
 
@@ -15,6 +15,8 @@ windows.addEventListener('load', function() {
             function(data) {
                 return data.query.random.title;
             });
+
+        return;
     }
 
     // Insert the query into the DOM
@@ -23,7 +25,7 @@ windows.addEventListener('load', function() {
         
         $("#searchBox").val() = title;
         
-        return 0;
+        return;
     }
 
     // Update the Speed Dial link 
@@ -36,10 +38,10 @@ windows.addEventListener('load', function() {
 
             sd.url = url;
 
-            return 0;
+            return;
         }
 
-        return 1;
+        return;
 
     }
     
