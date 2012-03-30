@@ -8,10 +8,9 @@ windows.addEventListener('load', function() {
             function(data) {
 
                 var xmlDoc = $.parseXML( data ),
-                $xml = $( xmlDoc ),
-                $title = $xml.find( "title" );
-
-                return $title;
+                $xml = $( xmlDoc );
+                
+                return $xml.find( "title" );
             });
     }
 
@@ -19,7 +18,7 @@ windows.addEventListener('load', function() {
 
     function writeQuery(title) {
         
-        $("#searchBox").html() = title;
+        $("#searchBox").val() = title;
         
         return 0;
     }
