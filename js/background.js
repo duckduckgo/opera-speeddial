@@ -4,13 +4,16 @@ windows.addEventListener('load', function() {
 
     function getQuery() {
         
-        $.get("http://en.wikipedia.org/w/api.php", { action: "query", list: "random", rnnamespace: "0", rnlimit: "1"},
+        $.getJSON("http://en.wikipedia.org/w/api.php?",
+            {
+                action: "query",
+                list: "random",
+                rnnamespace: "0",
+                rnlimit: "1",
+                format: "json"
+            },
             function(data) {
-
-                var xmlDoc = $.parseXML( data ),
-                $xml = $( xmlDoc );
-                
-                return $xml.find( "title" );
+                return data.query.random.title;
             });
     }
 
