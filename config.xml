@@ -8,4 +8,5 @@
     <feature name="opera:speeddial" required="true">
         <param name="url" value="http://duckduckgo.com" />
     </feature>
+    <access origin="http://wikipedia.org" subdomains="true" />
 </widget>

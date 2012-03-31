@@ -10,13 +10,13 @@ window.addEventListener('load', function() {
     },
     function(data) {
     
-        var title = "testing";
+        var title = data.query.random[0].title;
     
         $("#searchBox").val(title);
 
         if (opera.contexts.speeddial) {
             var url = "http://duckduckgo.com/?q=" + encodeURIComponent(title);
-         var sd = opera.contexts.speeddial;
+            var sd = opera.contexts.speeddial;
 
             sd.url = url;
         }
