@@ -1,17 +1,21 @@
-// Process the JSON from Wikipedia
+window.addEventListener('load', function() {
 
-function processJSON(json) {
+    function getQuery() {
 
-    var title = "testing";
+        var title = "testing";
     
-    $("#searchBox").val(title);
+        $("#searchBox").val(title);
 
-    if (opera.contexts.speeddial) {
-        var url = "http://duckduckgo.com/?q=" + encodeURIComponent(title);
-        var sd = opera.contexts.speeddial;
+        if (opera.contexts.speeddial) {
+            var url = "http://duckduckgo.com/?q=" + encodeURIComponent(title);
+            var sd = opera.contexts.speeddial;
 
-        sd.url = url;
+            sd.url = url;
+        }
+    
+        return 0;
     }
-    
-    return 0;
-}
+
+    getQuery();
+
+}, false);
