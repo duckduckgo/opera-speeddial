@@ -1,52 +1,17 @@
-window.addEventListener('load', function() {
+// Process the JSON from Wikipedia
 
-    // Get a random topic from Wikipedia
+function processJSON(json) {
 
-    function getQuery() {
-        
-        $.getJSON("http://en.wikipedia.org/w/api.php?"
-            {
-                action: "query",
-                list: "random",
-                rnnamespace: "0",
-                rnlimit: "1",
-                format: "json"
-            },
-            function(data) {
-                return data.query.random.title;
-            });
-
-        return;
-    }
-
-    // Insert the query into the DOM
-
-    function writeQuery(title) {
-        
-        $("#searchBox").val() = title;
-        
-        return;
-    }
-
-    // Update the Speed Dial link 
+    var title = "testing";
     
-    function updateLink(title) {
-        
-        if (opera.contexts.speeddial) {
-            var url = "http://duckduckgo.com/?q=" + encodeURIComponent(title);
-            var sd = opera.contexts.speeddial;
+    $("#searchBox").val(title);
 
-            sd.url = url;
+    if (opera.contexts.speeddial) {
+        var url = "http://duckduckgo.com/?q=" + encodeURIComponent(title);
+        var sd = opera.contexts.speeddial;
 
-            return;
-        }
-
-        return;
-
+        sd.url = url;
     }
     
-    var title = getQuery();
-    writeQuery(title);
-    updateLink(title);
-
-}, false);
+    return 0;
+}
