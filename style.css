@@ -14,21 +14,16 @@ body {
     width: 100%;
 }
 
-input {
-    display: block;
-    margin: 10px auto 0 auto;
-    width: 50%;
-    border: #8D8D8D solid 1px;
-    border-radius: 3px;
-    box-shadow: inset 1px 1px 2px #999;
-    font-family: "Helvetica Neue", "Segoe UI", Arial, sans-serif;
-    height: 20%;
-    font-size: 14px;
-    padding-left: 5px;
+#header {
+    font-weight: bold;
+}
+
+#zci {
+    font-size: .8em;
 }
 
 img {
     display: block;
-    height: 60%;
+    height: 50%;
     margin: 2% auto 0 auto;
 }

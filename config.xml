@@ -9,4 +9,5 @@
         <param name="url" value="http://duckduckgo.com" />
     </feature>
     <access origin="http://wikipedia.org" subdomains="true" />
+    <access origin="http://duckduckgo.com" subdomains="true" />
 </widget>
