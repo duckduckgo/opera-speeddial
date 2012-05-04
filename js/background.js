@@ -1,6 +1,6 @@
 window.addEventListener('load', function() {
 
-    function setTitle() {
+    function getTitle() {
         $.getJSON('http://en.wikipedia.org/w/api.php?callback=?',
             {
                 action: "query",
@@ -12,13 +12,13 @@ window.addEventListener('load', function() {
             function(data) {
                 title = data.query.random[0].title;
                 $("#header").html(title);
-                setAbstract(title);
+                getAbstract(title);
                 setOperaContexts(title);
             }
         );
     }
 
-    function setAbstract(title) {
+    function getAbstract(title) {
         $.getJSON('http://api.duckduckgo.com/?callback=?',
             {
                 q: title,
@@ -42,6 +42,6 @@ window.addEventListener('load', function() {
         }
     }
 
-    setTitle();
+    getTitle();
 
 }, false);
