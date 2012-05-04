@@ -25,11 +25,11 @@ body {
     background-color: #F9F9F9;
     border: 1px solid #D2D2D2;
     border-radius: 6px 6px 6px 6px;
+    overflow: hidden;
 }
 
 #content {
     display: none;
-    overflow: hidden;
 }
 
 #header-div {
