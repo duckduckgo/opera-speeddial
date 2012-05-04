@@ -1,6 +1,6 @@
 window.addEventListener('load', function() {
 
-    function getTitle() {
+    function setText() {
         $.getJSON('http://en.wikipedia.org/w/api.php?callback=?',
             {
                 action: "query",
@@ -11,7 +11,6 @@ window.addEventListener('load', function() {
             },
             function(data) {
                 title = data.query.random[0].title;
-                $("#header").html(title);
                 getAbstract(title);
                 setOperaContexts(title);
             }
@@ -28,7 +27,13 @@ window.addEventListener('load', function() {
             },
             function(data) {
                 abstract = data.AbstractText;
-                $("#zci").html(abstract);
+                if (abstract){
+                    $("#header").html(title);
+                    $("#zci").html(abstract);
+                }
+                else {
+                    getTitle();
+                }
             }
         );
     }
@@ -42,6 +47,6 @@ window.addEventListener('load', function() {
         }
     }
 
-    getTitle();
+    setText();
 
 }, false);
