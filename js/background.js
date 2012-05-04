@@ -30,6 +30,7 @@ window.addEventListener('load', function() {
                 if (abstract){
                     $("#header").html(title);
                     $("#zci").html(abstract);
+                    $("#content").fadeIn('slow');
                 }
                 else {
                     getTitle();
@@ -48,5 +49,12 @@ window.addEventListener('load', function() {
     }
 
     setText();
+
+    setInterval(function() {
+        $("#content").fadeOut('slow', function() {
+            setText();
+        });
+
+    }, 8000);
 
 }, false);

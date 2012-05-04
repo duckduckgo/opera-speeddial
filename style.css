@@ -12,18 +12,45 @@ body {
     color: #222;
     height: 100%;
     width: 100%;
+    font-size: .8em;
+}
+
+#wrapper {
+    width: 90%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    color: #333333;
+    background-color: #F9F9F9;
+    border: 1px solid #D2D2D2;
+    border-radius: 6px 6px 6px 6px;
+}
+
+#content {
+    display: none;
+    overflow: hidden;
+}
+
+#header-div {
+    font-weight: bold;
+    color: #434343;
+    background-color: #E9E9E9;
+    border-bottom: 1px solid #D1D1D1;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
 
 #header {
-    font-weight: bold;
+    padding: 2px;
 }
 
 #zci {
-    font-size: .8em;
+    padding: 2px;
 }
 
 img {
     display: block;
-    height: 50%;
-    margin: 2% auto 0 auto;
+    height: 30%;
+    margin: 2% auto 2% auto;
 }
