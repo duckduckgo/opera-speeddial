@@ -45,6 +45,7 @@ window.addEventListener('load', function() {
             var sd = opera.contexts.speeddial;
 
             sd.url = url;
+            sd.title = title;
         }
     }
 
