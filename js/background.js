@@ -1,6 +1,8 @@
 window.addEventListener('load', function() {
 
     function setText() {
+
+        // Get a random article title from Wikipedia
         $.getJSON('http://en.wikipedia.org/w/api.php?callback=?',
             {
                 action: "query",
@@ -14,6 +16,7 @@ window.addEventListener('load', function() {
                 
                 title = data.query.random[0].title;
 
+                // Get the ZCI abstract from DDG for the random title
                 $.getJSON('http://api.duckduckgo.com/?callback=?',
                     {
                         q: title,
@@ -23,6 +26,12 @@ window.addEventListener('load', function() {
                     },
                     function(data) {
                         abstract = data.AbstractText;
+
+                        // If there was an abstract, replace the content
+                        // and fade back in
+                        //
+                        // If not, try again
+
                         if (abstract){
                             $("#header").html(title);
                             $("#zci").html(abstract);
@@ -32,6 +41,8 @@ window.addEventListener('load', function() {
                             setText();
                     }
                 );
+
+                // Change the title and URL (when clicked) of the Speed Dial box 
                 setOperaContexts(title);
             }
         );
@@ -47,9 +58,13 @@ window.addEventListener('load', function() {
         }
     }
 
+    // Get the first ZCI when the page loads
     setText();
 
-    setInterval(function() {
+    // Change the ZCI by fading out, replacing it, then fading back in
+    // with the new constant at a constant interval
+
+    window.setInterval(function() {
         $("#content").fadeOut('slow', function() {
             setText();
         });
