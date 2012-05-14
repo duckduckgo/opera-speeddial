@@ -8,4 +8,4 @@ The text fades out and a query is sent to Wikipedia for a random article title. 
 
 	John Porter Hatch (January 9, 1822 – April 12, 1901) was a career American soldier who served as general in the Union Army during the American Civil War.
 
-The search and abstract are updated in the Speed Dial window and they fade back in to reveal the new text. The URL and Title of the window itself are then updated.
+The search and abstract are updated in the Speed Dial window and they fade back in to reveal the new text. The URL and title of the window itself are then updated.
