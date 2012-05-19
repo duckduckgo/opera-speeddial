@@ -35,15 +35,17 @@ window.addEventListener('load', function() {
                         if (abstract){
                             $("#header").html(title);
                             $("#zci").html(abstract);
+                            
+                            // Change the title and URL (when clicked) of the Speed Dial box 
+                            setOperaContexts(title);
+            
                             $("#content").fadeIn('slow');
+
                         }
                         else
                             setText();
                     }
                 );
-
-                // Change the title and URL (when clicked) of the Speed Dial box 
-                setOperaContexts(title);
             }
         );
     }
