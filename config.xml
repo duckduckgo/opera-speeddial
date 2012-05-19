@@ -2,7 +2,7 @@
 
 <widget xmlns="http://www.w3.org/ns/widgets" id="http://duckduckgo.com" defaultlocale="en" viewmodes="minimized">
     <name short="DuckDuckGo">DuckDuckGo - Zero-click Info</name>
-    <description>Shows random zero-click info from DuckDuckGo.</description>
+    <description>Shows random Zero-click Info from DuckDuckGo.</description>
     <author href="http://duckduckgo.com">DuckDuckGo</author>
     <icon src="images/icon_64.png"/>
     <feature name="opera:speeddial" required="true">
