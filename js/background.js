@@ -52,7 +52,7 @@ window.addEventListener('load', function() {
 
     function setOperaContexts(title) {    
         if (opera.contexts.speeddial) {
-            var url = "http://duckduckgo.com/?q=" + title;
+            var url = "http://duckduckgo.com/?t=oen&q=" + title;
             var sd = opera.contexts.speeddial;
 
             sd.url = url;

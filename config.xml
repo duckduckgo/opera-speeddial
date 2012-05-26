@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<widget xmlns="http://www.w3.org/ns/widgets" id="http://duckduckgo.com" defaultlocale="en" viewmodes="minimized">
-    <name short="DuckDuckGo">DuckDuckGo - Zero-click Info</name>
-    <description>Shows random Zero-click Info from DuckDuckGo.</description>
-    <author href="http://duckduckgo.com">DuckDuckGo</author>
+<widget xmlns="http://www.w3.org/ns/widgets" 
+        id="https://github.com/duckduckgo/opera-speeddial" 
+        defaultlocale="en" 
+        viewmodes="minimized"
+        version="1.2">
+    
+    <name short="DuckDuckGo">DuckDuckGo - Speed Dial</name>
+    <description>Shows random Zero-click Info from DuckDuckGo in a Speed Dial window.</description>
+    <author href="http://duckduckgo.com/?t=oen">DuckDuckGo</author>
     <icon src="images/icon_64.png"/>
     <feature name="opera:speeddial" required="true">
-        <param name="url" value="http://duckduckgo.com" />
+        <param name="url" value="http://duckduckgo.com/?t=oen" />
     </feature>
     <access origin="http://wikipedia.org" subdomains="true" />
     <access origin="http://duckduckgo.com" subdomains="true" />
