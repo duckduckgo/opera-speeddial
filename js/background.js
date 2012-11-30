@@ -3,7 +3,7 @@ window.addEventListener('load', function() {
     function setText() {
 
         // Get a random article title from Wikipedia
-        $.getJSON('http://en.wikipedia.org/w/api.php?callback=?',
+        $.getJSON('https://en.wikipedia.org/w/api.php?callback=?',
             {
                 action: "query",
                 list: "random",
@@ -17,7 +17,7 @@ window.addEventListener('load', function() {
                 title = data.query.random[0].title;
 
                 // Get the ZCI abstract from DDG for the random title
-                $.getJSON('http://api.duckduckgo.com/?callback=?',
+                $.getJSON('https://api.duckduckgo.com/?callback=?',
                     {
                         q: title,
                         format: "json",
@@ -52,7 +52,7 @@ window.addEventListener('load', function() {
 
     function setOperaContexts(title) {    
         if (opera.contexts.speeddial) {
-            var url = "http://duckduckgo.com/?t=oen&q=" + title;
+            var url = "https://duckduckgo.com/?t=oen&q=" + title;
             var sd = opera.contexts.speeddial;
 
             sd.url = url;
