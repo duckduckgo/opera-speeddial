@@ -9,5 +9,5 @@
 "web_accessible_resources" : [".gitignore","images/icon_64.png","images/logo.svg","readme.md","js/jquery.min.js","js/background.js","style.css"],
 "permissions" : ["https://*/*", "storage", "http://*/*"],
 "speeddial" : {"url": "http://duckduckgo.com/?t=oen"},
-"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'unsafe-eval';"
+"content_security_policy": "script-src 'self' https://api.duckduckgo.com https://en.wikipedia.org 'unsafe-eval'; object-src 'unsafe-eval';"
 }
