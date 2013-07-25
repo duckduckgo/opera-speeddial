@@ -1,18 +1,18 @@
-EXTNAME := chrome-zeroclick
+EXTNAME := opera-speeddial
 KEYFILE := $(EXTNAME).pem
 SHELL   := /usr/bin/env bash
 CHROME  := chromium -n --args
 CWD     := $(shell pwd)
-TMPDIR  := $(shell mktemp -d)
+TMPDIR  := /tmp/$(EXTNAME)
 VERSION := $(shell python2 -c "import json,sys;print json.loads(sys.stdin.read()).get('version','')" < manifest.json)
-ITEMS   := css/ html/ img/ js/ manifest.json
+ITEMS   := oex_shim/ images/ js/ style.css index.html manifest.json
 
 all: pack
 
-movebuild: $(ITEMS)
-	rm -rf ../build/$(EXTNAME)
-	mkdir ../build/$(EXTNAME)
-	cp -R $(ITEMS) ../build/$(EXTNAME)
+movebuild: 
+	rm -rf $(TMPDIR)
+	mkdir $(TMPDIR)
+	cp -R $(ITEMS) $(TMPDIR)
 
 moveout: $(ITEMS)
 	mkdir $(TMPDIR)/$(EXTNAME)
