@@ -8,49 +8,16 @@ html {
 }
 
 body {
-    background: #FDFDFD;
-    color: #222;
     height: 100%;
     width: 100%;
-    font-size: .8em;
-}
-
-#wrapper {
-    width: 90%;
-    height: 66%;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: "Helvetica Neue", "Segoe UI", Arial, sans-serif;
-    color: #333333;
-    background-color: #F9F9F9;
-    border: 1px solid #D2D2D2;
-    border-radius: 6px 6px 6px 6px;
-    overflow: hidden;
 }
 
 #content {
     display: none;
 }
 
-#header-div {
-    font-weight: bold;
-    color: #434343;
-    background-color: #E9E9E9;
-    border-bottom: 1px solid #D1D1D1;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-}
-
-#header {
-    padding: 2px;
-}
-
-#zci {
-    padding: 2px;
-}
-
 img {
     display: block;
-    height: 20%;
-    margin: 2% auto 4% auto;
+    height: 100%;
+    margin: auto;
 }
