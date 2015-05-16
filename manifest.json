@@ -6,7 +6,7 @@
 "version" : "1.3.1",
 "background" : {"page" : "index.html"},
 "icons" : {"128": "images/icon_64.png"},
-"web_accessible_resources" : [".gitignore","images/icon_64.png","images/logo.svg","images/small_background.png","images/large_background.png","readme.md","style.css"],
+"web_accessible_resources" : [".gitignore","images/icon_64.png","images/logo.svg","images/background.svg","readme.md","style.css"],
 "permissions" : ["https://*/*", "storage", "http://*/*"],
 "speeddial" : {"url": "http://duckduckgo.com/?t=oen"},
 "content_security_policy": "script-src 'self' https://api.duckduckgo.com https://en.wikipedia.org 'unsafe-eval'; object-src 'unsafe-eval';"
